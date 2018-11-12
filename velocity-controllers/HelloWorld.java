@@ -15,7 +15,7 @@ public class HelloWorld
         Template t = ve.getTemplate( "velocity-front/helloworld.vm" );
         /*  create a context and add data */
         VelocityContext context = new VelocityContext();
-        context.put("name", "World");
+        context.put("name", MyName.getFirstName());
         /* now render the template into a StringWriter */
         StringWriter writer = new StringWriter();
         t.merge( context, writer );

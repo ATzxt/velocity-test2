@@ -12,7 +12,7 @@ public class MyName {
         firstName = aName;
     }
 
-    public String getFirstName() {
+    public static String getFirstName() {
         return firstName;
     }
 
